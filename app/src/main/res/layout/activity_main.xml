@@ -10,21 +10,42 @@
         android:id="@+id/diceResultText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="36dp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="1" />
+        tools:text="6" />
 
     <Button
         android:id="@+id/rollDiceButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/dice_roll_text"
+        android:text="@string/d6_roll_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diceResultText" />
+
+    <Button
+        android:id="@+id/rollDiceButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d20_roll_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollDiceButton" />
+
+    <ImageView
+        android:id="@+id/diceImageView"
+        android:layout_marginTop="128dp"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:contentDescription="Dice with 1"
+        app:layout_constraintBottom_toTopOf="@+id/diceResultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
